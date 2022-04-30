@@ -1,10 +1,10 @@
 function count_f0(x) {
-  let f0 = (Math.sin(x + 1.57) ** 2) - ((x**2) / 4);
+  let f0 = (x**2) - 20*Math.sin(x)
   return +f0.toFixed(4);
 }
 
 function count_diff(x) {
-  let diff = (-x/2) - (2 * Math.cos(x) * Math.sin(x));
+  let diff = 2*x - 20*Math.cos(x);
   return +diff.toFixed(4);
 }
 
@@ -33,11 +33,11 @@ export function draw_graph() {
 
   y1 = [];
   xi = -2;
-  while (xi < 2) {
+  while (xi < 3) {
     xi += 0.01;
     yi = count_f0(xi);
     x1.push(xi);
     y1.push(yi);
   }
-  return [x1.map((x, i) => ({ x: x, y: y1[i] })), [{ x: 1.352, y: -0.4 }]];
+  return [x1.map((x, i) => ({ x: x, y: y1[i] })), [{ x: 0.0, y: 0.0 }, { x: 2.753, y: 0.0 }]];
 }
