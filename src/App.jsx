@@ -28,7 +28,7 @@ function App() {
           {/*</Route>*/}
           {/*<Route path="/lab-2" element={<Lab2 />} />*/}
           <Route path="/lab-3" element={<Lab3 />} />
-          {/*<Route path="/lab-4" element={<Lab4 />} />*/}
+          <Route path="/lab-4" element={<Lab4 />} />
           <Route path="/lab-5" element={null} />
           <Route path="*" element={<Navigate to="/lab-3" replace />} />
         </Routes>

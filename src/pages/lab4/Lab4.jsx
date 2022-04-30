@@ -21,7 +21,7 @@ export const Lab4 = () => {
         <h1 className="text-center font-bold text-xl">Лабораторна робота № 4</h1>
 
         <p className="mt-2"><strong>Тема:</strong> «Розв’язання нелінійних рівнянь на комп’ютері».</p>
-        <p className="mt-2"><strong>Варіант №8</strong></p>
+        <p className="mt-2"><strong>Варіант №18</strong></p>
 
         <div className="mt-4">
           <p className="text-lg">Завдання:</p>
